@@ -25,7 +25,7 @@ We then just add a code tag
 
 function engageThrusters()
 {
-    console.log("Thrusters engaged at " + speed);
+    console.log("Thrusters engaged at", speed);
 }
 
 engageThrusters();</code>
@@ -90,7 +90,7 @@ engageThrusters()</code>
 
 function engageThrusters()
 {
-    console.log("Thrusters engaged at " + speed);
+    console.log("Thrusters engaged at", speed);
 }
 
 engageThrusters();</code>
@@ -117,11 +117,11 @@ engageThrusters()</code>
 ---
 
 ## How to Use the Colorer JS File
-In the **src** > **js** > **color** folder we find the Colorer Script named [**catopalian_universal_code_colorer.js**](src/js/colorer/catopalian_javascript_universal_code_colorer.js)
+In the **src** > **js** > **color** folder we find the Colorer Script named [**catopalian_javascript_universal_code_colorer.js**](src/js/colorer/catopalian_javascript_universal_code_colorer.js)
 
 <details>
 <summary> note </summary>
-This file named catopalian_universal_code_colorer.js must be in your project folder to color the code.
+This file named catopalian_javascript_universal_code_colorer.js must be in your project folder to color the code.
 
 Remember to applyCustomHighlighting() in the body onload of your html file.
 
