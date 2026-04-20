@@ -1,5 +1,5 @@
 # CATopalian JavaScript Universal Code Colorer
-Colors All Languages Code! Just specify which language and add whatever keywords you like to the array.
+Can Color All Programming Languages and right now has JS, PY and Slua already defined! To define more languages just specify which language and add whatever keywords you like to the array.
 
 ---
 
