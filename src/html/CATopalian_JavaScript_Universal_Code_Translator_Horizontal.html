@@ -1,0 +1,127 @@
+<!-- Dedicated to God the Father -->
+<!-- All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026 -->
+<!-- https://github.com/ChristopherTopalian -->
+<!-- https://github.com/ChristopherAndrewTopalian -->
+<!-- CATopalian_JavaScript_Universal_Code_Translator_Horizontal.html -->
+
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+<title> CATopalian JavaScript Universal Code Translator Horizontal </title>
+
+<script src = "../js/colorer/catopalian_javascript_universal_code_colorer.js"></script>
+
+<style>
+
+body
+{
+    padding: 0px 5px;
+    background-color: rgb(20, 20, 20);
+    font-family: Arial;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+
+.header
+{
+    text-align: center;
+    font-size: 24px;
+    color: rgb(73, 100, 150);
+    margin: 0px;
+}
+
+.dashboard
+{
+    display: flex;
+    gap: 10px; /* room between panels */
+}
+
+.panel
+{
+    flex: 1; /* Makes both sides exactly equal width */
+    background-color: #222;
+    padding: 0px 5px;
+    border: 2px solid rgb(73, 100, 150);
+    border-radius: 10px;
+}
+
+h2
+{
+    font-size: 24px;
+    color: rgb(200, 200, 200);
+}
+
+h3
+{
+    margin: 5px 5px;
+    color: cyan;
+    border-bottom: 1px solid cyan;
+    padding-bottom: 2px;
+}
+
+h4
+{
+    margin: 0px;
+}
+
+code
+{
+    background-color: rgb(0, 0, 0);
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+</style>
+
+</head>
+
+<body onload = "applyCustomHighlighting();">
+
+<div class="header">
+<h2> CATopalian JS Universal Code Translator </h2>
+</div>
+
+<h4> variable_and_custom_function </h4>
+
+<div class="dashboard">
+<div class="panel">
+<h3> SLua </h3>
+<code class="custom-code" data-language="lua">-- variable_and_custom_function.lua
+local speed = 70 -- Set initial velocity
+
+local function engageThrusters()
+    print("Thrusters engaged at " .. speed)
+end
+
+engageThrusters()</code>
+</div>
+
+<div class="panel">
+<h3> JavaScript </h3>
+<code class="custom-code" data-language="js">// variable_and_custom_function.js
+let speed = 70; // Set initial velocity
+
+function engageThrusters()
+{
+    console.log("Thrusters engaged at", speed);
+}
+
+engageThrusters();</code>
+</div>
+
+<div class="panel">
+<h3> Python </h3>
+<code class="custom-code" data-language="py"># variable_and_custom_function.py
+speed = 70 # Set initial velocity
+
+def engageThrusters():
+    print("Thrusters engaged at", speed)
+
+engageThrusters()</code>
+</div>
+
+</body>
+
+</html>
+

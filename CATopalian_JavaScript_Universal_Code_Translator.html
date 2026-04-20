@@ -1,0 +1,168 @@
+<!-- Dedicated to God the Father -->
+<!-- All Rights Reserved Christopher Andrew Topalian Copyright 2000-2026 -->
+<!-- https://github.com/ChristopherTopalian -->
+<!-- https://github.com/ChristopherAndrewTopalian -->
+<!-- CATopalian_JavaScript_Universal_Code_Colorer.html -->
+
+<html>
+<head>
+<title> CATopalian JavaScript Universal Code Colorer </title>
+
+<meta charset = 'UTF-8'>
+
+<meta name = 'viewport' content = 'width = device-width, initial-scale = 1.0'>
+
+<link rel = "icon" href = "src/media/textures/icons/CATopalian_True_AI_Centered.png" type = "image/png">
+
+<link rel = 'stylesheet' href = 'src/css/style001.css'>
+
+<script src = 'src/js/sound/sound.js'></script>
+
+<script>
+
+// shortcuts.js
+
+function ge(whichId)
+{
+    let result = document.getElementById(whichId);
+    return result;
+}
+
+function ce(whichType)
+{
+    let result = document.createElement(whichType);
+    return result;
+}
+
+function ba(whichElement)
+{
+    let result = document.body.append(whichElement);
+    return result;
+}
+
+function cl(whichMessage)
+{
+    let result = console.log(whichMessage);
+    return result;
+}
+
+//----//
+
+function makeInterface()
+{
+    let titleAndLink = ce('a');
+    titleAndLink.href = 'https://github.com/ChristopherAndrewTopalian/CATopalian_JavaScript_Universal_Code_Colorer';
+    titleAndLink.target = '_blank';
+    titleAndLink.style.fontFamily = 'Arial';
+    titleAndLink.style.fontWeight = 'bold';
+    titleAndLink.textContent = 'CATopalian JavaScript Universal Code Colorer';
+    titleAndLink.style.fontSize = '17px';
+    titleAndLink.style.textDecoration = 'none';
+    titleAndLink.style.color = 'rgb(0, 255, 255)';
+    titleAndLink.style.lineHeight = '12px';
+    ba(titleAndLink);
+    
+    //-//
+
+    let mainDiv = ce('div');
+    mainDiv.style.display = 'flex';
+    mainDiv.style.flexDirection = 'row';
+    mainDiv.style.marginTop = 10 + 'px';
+    mainDiv.style.gap = '4px';
+    ba(mainDiv);
+
+    //-//
+
+    let tutorialFiles = [
+    {
+        name: 'Horizontal',
+        url: 'src/html/CATopalian_JavaScript_Universal_Code_Translator_Horizontal.html',
+    },
+
+    {
+        name: 'Vertical',
+        url: 'src/html/CATopalian_JavaScript_Univeral_Code_Translator_Vertical.html'
+    }
+
+    ];
+
+    //-//
+
+    let tutorialsDetails = ce('details');
+    tutorialsDetails.open = 'true';
+    mainDiv.append(tutorialsDetails);
+
+    let tutorialsSummary = ce('summary');
+    tutorialsSummary.textContent = 'Tutorials';
+    tutorialsDetails.append(tutorialsSummary);
+
+    //-//
+
+    let tutorialsBtnContainer = ce('div');
+    tutorialsBtnContainer.style.border = 'solid 1px rgb(100, 100, 100)';
+    tutorialsBtnContainer.style.display = 'flex';
+    tutorialsBtnContainer.style.flexDirection = 'column';
+    tutorialsBtnContainer.style.padding = '2px 4px';
+    tutorialsDetails.append(tutorialsBtnContainer);
+
+    for (let x = 0; x < tutorialFiles.length; x++)
+    {
+        let pageBtn = ce('button');
+        pageBtn.onmouseover = function()
+        {
+            hoverSound();
+        };
+        pageBtn.onclick = function()
+        {
+            clickSound();
+            ge('theFrame').src = tutorialFiles[x].url;
+        };
+        pageBtn.oncontextmenu = function()
+        {
+            clickSound();
+            window.open(tutorialFiles[x].url);
+        };
+        pageBtn.textContent = tutorialFiles[x].name;
+        pageBtn.style.fontSize = 15 + 'px';
+        pageBtn.style.fontWeight = 'bold';
+        pageBtn.style.alignSelf = 'flex-start';
+        tutorialsBtnContainer.append(pageBtn);
+    }
+
+    //-//
+
+    tutorialsBtnContainer.append(ce('hr'));
+
+    //-//
+
+    let colorerLink = ce('a');
+    colorerLink.textContent = 'Colorer Script';
+    colorerLink.href = "src/js/colorer/catopalian_javascript_universal_code_colorer.js"
+    colorerLink.target = "_blank";colorerLink.style.color = 'cyan'; colorerLink.style.textDecoration = 'none';
+    tutorialsBtnContainer.append(colorerLink);
+
+    //-//
+
+    let theFrame = ce('iframe');
+    theFrame.style.width = '600px';
+    theFrame.style.height = '300px';
+    theFrame.id = 'theFrame';
+    theFrame.src = tutorialFiles[1].url;
+    mainDiv.append(theFrame);
+}
+
+function whenLoaded()
+{
+    makeInterface();
+}
+
+</script>
+
+</head>
+
+<body onload = 'whenLoaded();'>
+
+</body>
+
+</html>
+
