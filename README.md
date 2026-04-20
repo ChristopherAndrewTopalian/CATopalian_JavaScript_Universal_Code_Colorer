@@ -135,7 +135,6 @@ Video: https://www.youtube.com/watch?v=tswEICyl8rs
 
 ![002](src/media/textures/screenshots/002.png)
 
-
 ---
 
 ### How to Download this App
